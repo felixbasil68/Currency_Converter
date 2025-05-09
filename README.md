@@ -60,6 +60,7 @@ Convert currency amount.
 To execute unit tests:
 
 mvn test
+
 Test results will be displayed in the terminal.
 
 ### 5. Swagger API Docs
