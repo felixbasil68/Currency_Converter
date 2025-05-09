@@ -70,6 +70,6 @@ http://localhost:8080/swagger-ui/index.html
 This interface allows interactive testing of all endpoints.
 
 Author
-Developed by Felix Deon Basil – Feel free to contribute or fork the project!
+Developed by Felix Deon Basil
 
 
