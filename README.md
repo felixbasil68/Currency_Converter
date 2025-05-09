@@ -30,8 +30,10 @@ Replace YOUR_API_KEY_HERE with your actual API key from ExchangeRatesAPI.
 
 ### 3. Build & Run the Application
 
-mvn clean install
-mvn spring-boot:run
+##### mvn clean install
+
+##### mvn spring-boot:run
+
 The application will start at: http://localhost:8080
 
 #### API Endpoints
@@ -59,7 +61,7 @@ Convert currency amount.
 ### 4. Run Unit Tests
 To execute unit tests:
 
-mvn test
+##### mvn test
 
 Test results will be displayed in the terminal.
 
