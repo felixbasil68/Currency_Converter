@@ -40,7 +40,7 @@ Example: /api/rates?base=USD
 POST /api/convert
 Convert currency amount.
 
-####Request:
+#### Request:
 {
   "from": "USD",
   "to": "EUR",
