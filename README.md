@@ -19,7 +19,9 @@ A Spring Boot application that provides real-time currency exchange rates and co
 ### 1. Clone the Repository
 
 git clone https://github.com/your-username/currency-converter.git
+
 cd currency-converter
+
 ### 2. Add Configuration
 Edit the src/main/resources/application.properties file:
 
@@ -42,6 +44,7 @@ Fetch exchange rates for a base currency.
 
 Example:
 GET /api/rates?base=USD
+
 ➤ POST /api/convert
 Convert currency amount.
 
