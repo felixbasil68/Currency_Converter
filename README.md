@@ -40,21 +40,13 @@ Example: /api/rates?base=USD
 POST /api/convert
 Convert currency amount.
 
-Request:
-
-json
-Copy
-Edit
+####Request:
 {
   "from": "USD",
   "to": "EUR",
   "amount": 100
 }
-Response:
-
-json
-Copy
-Edit
+#### Response:
 {
   "from": "USD",
   "to": "EUR",
