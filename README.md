@@ -10,7 +10,7 @@ A Spring Boot application that provides real-time currency exchange rates and co
 - Spring Boot 3.4.5  
 - Maven  
 - RestTemplate  
-- JUnit 5 + Mockito  
+- JUnit + Mockito  
 - Lombok  
 - Swagger UI (SpringDoc OpenAPI)
 
