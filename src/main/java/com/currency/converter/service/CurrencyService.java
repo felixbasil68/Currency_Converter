@@ -18,12 +18,12 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class CurrencyService {
 
     @Value("${token}")
-    private String token;
+    public String token;
 
     @Value("${currency.api.url}")
-    private String apiUrl;
+    public String apiUrl;
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    private final RestTemplate restTemplate;
 
     public ExchangeRateResponse getRates(String... symbols) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(apiUrl + token);
