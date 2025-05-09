@@ -32,7 +32,7 @@ mvn clean install
 mvn spring-boot:run
 The application will start at: http://localhost:8080
 
-### API Endpoints
+### 3. API Endpoints
 GET /api/rates
 Fetch exchange rates for a base currency.
 Example: /api/rates?base=USD
