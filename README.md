@@ -1,7 +1,8 @@
-# Currency_Converter
-Currency Converter API Integration
+# Currency Converter
 
 A Spring Boot application that provides real-time currency exchange rates and conversion using the ExchangeRates API.
+
+---
 
 ## Tech Stack
 
@@ -11,47 +12,64 @@ A Spring Boot application that provides real-time currency exchange rates and co
 - RestTemplate  
 - JUnit 5 + Mockito  
 - Lombok  
+- Swagger UI (SpringDoc OpenAPI)
 
-## Setup & Run
+##  Setup & Run
 
-### 1. Add Configuration
+### 1. Clone the Repository
 
-Update `src/main/resources/application.properties`:
-
-application.properties
+git clone https://github.com/your-username/currency-converter.git
+cd currency-converter
+### 2. Add Configuration
+Edit the src/main/resources/application.properties file:
 
 spring.application.name=Currency-Converter
 token=YOUR_API_KEY_HERE
 currency.api.url=https://api.exchangeratesapi.io/v1/latest?access_key=
+Replace YOUR_API_KEY_HERE with your actual API key from ExchangeRatesAPI.
 
-### 2. Build and Run
-bash
-Copy
-Edit
+### 3. Build & Run the Application
+
 mvn clean install
 mvn spring-boot:run
 The application will start at: http://localhost:8080
 
-### 3. API Endpoints
-GET /api/rates
+#### API Endpoints
+➤ GET /api/rates
 Fetch exchange rates for a base currency.
-Example: /api/rates?base=USD
 
-POST /api/convert
+Example:
+GET /api/rates?base=USD
+➤ POST /api/convert
 Convert currency amount.
 
-#### Request:
+##### Request Body:
 {
   "from": "USD",
   "to": "EUR",
   "amount": 100
 }
-#### Response:
+##### Sample Response:
 {
   "from": "USD",
   "to": "EUR",
   "originalAmount": 100.0,
   "convertedAmount": 85.0
 }
+### 4. Run Unit Tests
+To execute unit tests:
+
+mvn test
+Test results will be displayed in the terminal.
+
+### 5. Swagger API Docs
+You can explore the API using Swagger UI once the app is running:
+
+http://localhost:8080/swagger-ui/index.html
+
+This interface allows interactive testing of all endpoints.
+
+Author
+Developed by Felix Deon Basil – Feel free to contribute or fork the project!
 
 
