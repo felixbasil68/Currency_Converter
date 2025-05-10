@@ -46,7 +46,7 @@ class CurrencyServiceTest {
         when(restTemplate.getForObject(contains("symbols=USD,EUR"), eq(ExchangeRateResponse.class)))
                 .thenReturn(mockResponse);
 
-        ExchangeRateResponse response = currencyService.getRates("USD", "EUR");
+        ExchangeRateResponse response = currencyService.getRatesWithValues("USD", "EUR");
 
         assertNotNull(response);
         assertEquals(2, response.getRates().size());
