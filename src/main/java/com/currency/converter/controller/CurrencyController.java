@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.currency.converter.dto.ConversionRequest;
 import com.currency.converter.dto.ConversionResponse;
+import com.currency.converter.dto.ExchangeRateResponse;
 import com.currency.converter.service.CurrencyService;
 
 
@@ -26,7 +27,7 @@ public class CurrencyController {
     private CurrencyService currencyService;
 
     @GetMapping("/rates")
-    public ResponseEntity<?> getRates(@RequestParam(defaultValue = "USD") String base) {
+    public ResponseEntity<ExchangeRateResponse> getRates(@RequestParam(defaultValue = "USD") String base) {
         return ResponseEntity.ok(currencyService.getRates(base));
     }
 
